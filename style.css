@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,300;1,400&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #132a13;
+}
+
+.text, .key-code, .key-name
+{
+    font-size: 45px;
+    color: #ecf39e;
+    font-weight: 500;
+}
+
+.text
+{
+    font-size: 30px;
+    text-align: center;
+}
+.box.active .text
+{
+    display: none;
+}
+.box
+{
+    width: 290px;
+    padding: 25px;
+    border-radius: 15px;
+    background: #4f772d;
+}
+
+.content, .key-code, .details
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .content
+{
+    display: none;
+    flex-direction: column;
+}
+
+.box.active .content
+{
+    display: flex;
+}
+
+.content .key-code
+{
+    height: 110px;
+    width: 110px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 5px solid #31572c;
+}
+
+
+
+.content .details
+{
+    width: 100%;
+    margin-top: 15px;
+    justify-content: space-evenly;
+}
+
+.details p
+{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.details p:last-child
+{
+    border-left: 1px solid #bfbfbf;
+}
